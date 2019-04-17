@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="Raiz">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element minOccurs="0" maxOccurs="unbounded" name="Dependencias">
+          <xsd:complexType>
+            <xsd:all>
+	      <xsd:element minOccurs="0" maxOccurs="1" name="Posicao" type="xsd:integer"/>
+	      <xsd:element minOccurs="0" maxOccurs="1" name="IdDependencia" type="xsd:integer"/>
+              <xsd:element minOccurs="0" maxOccurs="1" name="Id" type="xsd:integer"/>
+              <xsd:element minOccurs="0" maxOccurs="1" name="Nome" />
+              <xsd:element minOccurs="0" maxOccurs="1" name="Tipo" />
+	      <xsd:element minOccurs="0" maxOccurs="1" name="Status"/>
+	      <xsd:element minOccurs="0" maxOccurs="1" name="Descricao"/>
+            </xsd:all>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>
